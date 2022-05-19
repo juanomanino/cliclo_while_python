@@ -21,8 +21,9 @@ if a<b:
         if r==0:
             s=s+1
         a= a+1
-
+else:
+    print("n debe ser mayor de 1")
 
 #output
-print("La cantidad de números pares del rango es: ", s)
+print("La cantidad de múltiplos de 5 del rango es: ", s)
 
