@@ -7,16 +7,23 @@ print("----CANTIDAD NUMEROS PARES EN UN RANGO----")
 print("------------------------------------------")
 
 #input
-suma=0
-j=1
-n=int(input("Dame el valor de n: "))
+
+a=int(input("Ingrese el extremo inferior del rango (a): "))
+b=int(input("Ingrese el extremo superior del rango (b): "))
+
 
 #processing
-
-while j<=n:
-    suma=suma+j
-    j=j+1
+if a<b:
+    s=0
+    a=a+1
+    while a<b:
+        r=a%2
+        if r==0:
+            s=s+1
+        a= a+1
+else:
+    print("a debe ser menor que b")
 
 #output
-print("La suma de los ", n," primeros números naturales es: ",suma)
+print("La cantidad de números pares del rango es: ", s)
 

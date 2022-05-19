@@ -7,16 +7,22 @@ print("----PRIMEROS N MULTIPOS DE 5----")
 print("--------------------------------")
 
 #input
-suma=0
-j=1
-n=int(input("Dame el valor de n: "))
+
+b=int(input("Ingrese n: "))
+
 
 #processing
+a=1
+if a<b:
+    s=0
+    a=a+1
+    while a<=b:
+        r=a%5
+        if r==0:
+            s=s+1
+        a= a+1
 
-while j<=n:
-    suma=suma+j
-    j=j+1
 
 #output
-print("La suma de los ", n," primeros números naturales es: ",suma)
+print("La cantidad de números pares del rango es: ", s)
 
